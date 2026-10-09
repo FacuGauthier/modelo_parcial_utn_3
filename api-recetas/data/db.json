@@ -1,0 +1,120 @@
+{
+  "usuarios": [
+    { "id": 1, "username": "ana", "mail": "ana@mail.com", "contrasena": "ana123456" },
+    { "id": 2, "username": "bruno", "mail": "bruno@mail.com", "contrasena": "bruno1234" },
+    { "id": 3, "username": "carla", "mail": "carla@mail.com", "contrasena": "carla1234" },
+    { "id": 4, "username": "diego", "mail": "diego@mail.com", "contrasena": "diego1234" }
+  ],
+  "recetas": [
+    {
+      "id": 1,
+      "titulo": "Brownies de chocolate",
+      "descripcion": "Mezclar chocolate derretido con manteca, huevos, azúcar y harina. Hornear hasta que el centro quede húmedo.",
+      "categoria": "Postres",
+      "tiempoPreparacion": 40,
+      "dificultad": "facil",
+      "favorita": true,
+      "creadorId": 1
+    },
+    {
+      "id": 2,
+      "titulo": "Ensalada mediterránea",
+      "descripcion": "Combinar tomate, pepino, aceitunas, queso y hojas verdes. Condimentar con aceite de oliva y limón.",
+      "categoria": "Ensaladas",
+      "tiempoPreparacion": 15,
+      "dificultad": "facil",
+      "favorita": false,
+      "creadorId": 1
+    },
+    {
+      "id": 3,
+      "titulo": "Ñoquis de papa",
+      "descripcion": "Hacer un puré seco, integrar harina y formar los ñoquis. Cocinar en agua hirviendo hasta que suban.",
+      "categoria": "Pastas",
+      "tiempoPreparacion": 60,
+      "dificultad": "media",
+      "favorita": true,
+      "creadorId": 1
+    },
+    {
+      "id": 4,
+      "titulo": "Budín de limón",
+      "descripcion": "Batir manteca y azúcar, agregar huevos, ralladura de limón y harina. Hornear hasta dorar.",
+      "categoria": "Postres",
+      "tiempoPreparacion": 50,
+      "dificultad": "facil",
+      "favorita": false,
+      "creadorId": 1
+    },
+    {
+      "id": 5,
+      "titulo": "Pasta fresca casera",
+      "descripcion": "Formar una masa con harina y huevos, dejar descansar, estirar y cortar. Cocinar pocos minutos.",
+      "categoria": "Pastas",
+      "tiempoPreparacion": 35,
+      "dificultad": "media",
+      "favorita": false,
+      "creadorId": 1
+    },
+    {
+      "id": 6,
+      "titulo": "Tarta de verduras",
+      "descripcion": "Saltear cebolla, zanahoria y zapallito. Mezclar con huevo, colocar sobre la masa y hornear.",
+      "categoria": "Tartas",
+      "tiempoPreparacion": 45,
+      "dificultad": "media",
+      "favorita": false,
+      "creadorId": 2
+    },
+    {
+      "id": 7,
+      "titulo": "Pan casero",
+      "descripcion": "Mezclar harina, agua, levadura y sal. Amasar, dejar levar y cocinar en horno caliente.",
+      "categoria": "Panificados",
+      "tiempoPreparacion": 90,
+      "dificultad": "dificil",
+      "favorita": true,
+      "creadorId": 2
+    },
+    {
+      "id": 8,
+      "titulo": "Lemon pie",
+      "descripcion": "Preparar una base, cubrir con crema de limón y terminar con merengue. Enfriar antes de servir.",
+      "categoria": "Postres",
+      "tiempoPreparacion": 75,
+      "dificultad": "dificil",
+      "favorita": false,
+      "creadorId": 2
+    },
+    {
+      "id": 9,
+      "titulo": "Empanadas de carne",
+      "descripcion": "Cocinar carne picada con cebolla y condimentos. Rellenar los discos, cerrar y hornear.",
+      "categoria": "Platos principales",
+      "tiempoPreparacion": 70,
+      "dificultad": "media",
+      "favorita": false,
+      "creadorId": 3
+    },
+    {
+      "id": 10,
+      "titulo": "Hummus",
+      "descripcion": "Procesar garbanzos cocidos con tahini, limón, ajo y aceite de oliva hasta lograr una crema.",
+      "categoria": "Entradas",
+      "tiempoPreparacion": 10,
+      "dificultad": "facil",
+      "favorita": true,
+      "creadorId": 3
+    },
+    {
+      "id": 11,
+      "titulo": "Galletitas de avena",
+      "descripcion": "Mezclar avena, harina, azúcar, manteca y huevo. Formar bolitas y hornear hasta dorar.",
+      "categoria": "Postres",
+      "tiempoPreparacion": 25,
+      "dificultad": "facil",
+      "favorita": false,
+      "creadorId": 4
+    }
+  ]
+}
