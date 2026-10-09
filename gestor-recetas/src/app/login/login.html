@@ -1,0 +1,30 @@
+<section>
+
+    <label>
+        Usuario
+        <input type="text" [formField]="formulario.username">
+    </label>
+    @if (formulario.username().touched() && formulario.username().invalid()) {
+        <p class="error">El usuario es obligatorio</p>
+    }
+
+    <label>
+        Contraseña
+        <input type="password" [formField]="formulario.contrasena">
+    </label>
+    @if (formulario.contrasena().touched() && formulario.contrasena().invalid()) {
+        <p class="error">La contrasña es obligatoria</p>
+    }
+
+    <button type="button" [disabled]="formulario().invalid() || enviando()" (click)="enviar($event)">ENVIAR</button>
+
+    <div>
+        <p>¿No tienes cuenta?</p>
+        <button routerLink="/registro">Registrate</button>
+    </div>
+
+    @if (errorApi()) {
+        <p>{{ errorApi() }}</p>
+    }
+
+</section>

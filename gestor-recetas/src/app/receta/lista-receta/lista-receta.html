@@ -1,0 +1,28 @@
+@if (!sesion.estaLogueado()) {
+    <app-error/>
+} @else {
+    <section>
+        <div>
+            <p>Filtrar por dificultad:</p>
+            <select #selector (change)="cambiarFiltro(selector.value)">
+                <option value="facil">Facil</option>
+                <option value="media">Media</option>
+                <option value="dificil">Dificil</option>
+            </select>
+        </div>
+    </section>
+
+    <section>
+        @if (cargando()) {
+            <p>Cargando...</p>
+        } @else if (errorApi()) {
+            <p>{{ errorApi() }}</p>
+        } @else {
+            @for (receta of listadoFiltrado(); track receta.id) {
+                <app-tarjeta-receta [receta]="receta" (toggle)="recetaToggle(receta, $event)" />
+            } @empty {
+                <p>No hay recetas para mostrar</p>
+            }
+        }
+    </section>
+}
